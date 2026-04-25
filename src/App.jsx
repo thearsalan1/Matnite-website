@@ -1,3 +1,4 @@
+import Education from "./components/home/Education";
 import Navbar from "./components/Navbar";
 import Notic from "./components/Notic";
 import Home from "./pages/Home";
@@ -7,7 +8,8 @@ function App() {
     <>
       <Notic />
       <Navbar />
-      <Home/>
+      <Home />
+      <Education />
     </>
   );
 }
