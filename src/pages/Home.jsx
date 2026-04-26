@@ -6,6 +6,9 @@ import { IoBagCheckOutline, IoCodeSlash } from "react-icons/io5";
 import { GiGraduateCap } from "react-icons/gi";
 import Marquee from "../components/home/Marquee";
 import Expertise from "../components/home/Expertise";
+import Application from "../components/home/Application";
+import Education from "../components/home/Education";
+import Analytics from "../components/home/AnalyticsAndInnovation";
 
 const List = [
   {
@@ -46,6 +49,9 @@ const Home = () => {
       <Hero List={List} />
       <Marquee />
       <Expertise />
+      <Education />
+      <Application />
+      <Analytics />
     </>
   );
 };

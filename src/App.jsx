@@ -9,7 +9,7 @@ function App() {
       <Notic />
       <Navbar />
       <Home />
-      <Education />
+      
     </>
   );
 }
