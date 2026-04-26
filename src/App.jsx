@@ -1,3 +1,4 @@
+import Footer from "./components/Footer";
 import Education from "./components/home/Education";
 import Navbar from "./components/Navbar";
 import Notic from "./components/Notic";
@@ -9,7 +10,7 @@ function App() {
       <Notic />
       <Navbar />
       <Home />
-      
+      <Footer/>
     </>
   );
 }

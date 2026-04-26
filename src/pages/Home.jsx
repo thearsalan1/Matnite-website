@@ -9,6 +9,8 @@ import Expertise from "../components/home/Expertise";
 import Application from "../components/home/Application";
 import Education from "../components/home/Education";
 import Analytics from "../components/home/AnalyticsAndInnovation";
+import WhyUs from "../components/home/WhyUs";
+import Description from "../components/home/Description";
 
 const List = [
   {
@@ -52,6 +54,8 @@ const Home = () => {
       <Education />
       <Application />
       <Analytics />
+      <WhyUs />
+      <Description />
     </>
   );
 };
