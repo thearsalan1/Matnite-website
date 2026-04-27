@@ -11,6 +11,7 @@ import Education from "../components/home/Education";
 import Analytics from "../components/home/AnalyticsAndInnovation";
 import WhyUs from "../components/home/WhyUs";
 import Description from "../components/home/Description";
+import Team from "../components/home/Team";
 
 const List = [
   {
@@ -55,6 +56,7 @@ const Home = () => {
       <Application />
       <Analytics />
       <WhyUs />
+      <Team />
       <Description />
     </>
   );

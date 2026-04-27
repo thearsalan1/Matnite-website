@@ -62,7 +62,7 @@ const hexToRGBA = (hex, opacity) => {
 const Expertise = () => {
   return (
     <div className="relative w-full flex flex-col items-center bg-gray-50 py-10 gap-8 overflow-hidden">
-      {/* 🌈 Balanced Background Glow */}
+      {/* Balanced Background Glow */}
       <div className="absolute top-10 left-[-50px] w-[300px] h-[300px] bg-[#1c63f6] opacity-20 blur-[100px] rounded-full" />
       <div className="absolute top-10 right-[0px] w-[300px] h-[300px] bg-[#04b06e] opacity-20 blur-[100px] rounded-full" />
       <div className="absolute bottom-0 left-[30%] w-[300px] h-[300px] bg-[#f86c09] opacity-20 blur-[120px] rounded-full" />
@@ -106,7 +106,7 @@ const Expertise = () => {
         technology solutions for modern businesses.
       </p>
 
-      {/* 🔥 Auto Scroll Cards */}
+      {/*  Auto Scroll Cards */}
       <div className="relative overflow-hidden w-[90%] mx-auto">
         {/* LEFT FADE */}
         <div

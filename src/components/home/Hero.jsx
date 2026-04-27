@@ -1,44 +1,83 @@
 import React from "react";
-import { FaArrowRight, FaChartBar } from "react-icons/fa";
+import { FaArrowRight } from "react-icons/fa";
 import {
   IoBagCheckOutline,
-  IoCodeSlash,
   IoShieldCheckmarkOutline,
 } from "react-icons/io5";
 import { RiRobot3Line } from "react-icons/ri";
-import { GiGraduateCap } from "react-icons/gi";
 
 const Hero = ({ List }) => {
   return (
     <>
-      <section className="w-[90%] mx-auto my-10 bg-white rounded-3xl p-10 flex flex-col md:flex-row gap-10 relative shadow-lg shadow-orange-500/40">
+      <section
+        className="
+        w-[90%] mx-auto my-6 md:my-10 
+        bg-white rounded-3xl 
+        p-6 md:p-10 
+        flex flex-col md:flex-row 
+        gap-8 md:gap-10 
+        relative 
+        shadow-lg shadow-orange-500/40
+      "
+      >
         {/* decoration */}
         <div
-          className="absolute top-[-50px] right-[0px] w-[300px] h-[300px] 
-      bg-[#04b06e] opacity-30 blur-[120px] rounded-full pointer-events-none"
+          className="
+          absolute top-[-50px] right-[0px] 
+          w-[180px] md:w-[300px] h-[180px] md:h-[300px]
+          bg-[#04b06e] opacity-20 md:opacity-30 
+          blur-[80px] md:blur-[120px] 
+          rounded-full pointer-events-none
+        "
         ></div>
+
         <div
-          className="absolute top-[-50px] left-[0px] w-[300px] h-[300px] 
-      bg-[#1c63f6] opacity-30 blur-[120px] rounded-full pointer-events-none"
+          className="
+          absolute top-[-50px] left-[0px] 
+          w-[180px] md:w-[300px] h-[180px] md:h-[300px]
+          bg-[#1c63f6] opacity-20 md:opacity-30 
+          blur-[80px] md:blur-[120px] 
+          rounded-full pointer-events-none
+        "
         ></div>
 
         {/* LEFT */}
         <div className="w-full md:w-1/2">
           <div
-            className="border border-[#04b06e]/30 bg-[#04b06e]/10 text-[#04b06e] 
-              px-4 py-1.5 rounded-full text-sm font-heading font-semibold w-fit mb-10"
+            className="
+            border border-[#04b06e]/30 bg-[#04b06e]/10 text-[#04b06e] 
+            px-3 md:px-4 py-1 md:py-1.5 
+            rounded-full 
+            text-xs md:text-sm 
+            font-heading font-semibold 
+            w-fit mb-6 md:mb-10
+          "
           >
             India's fastest growing AI Tech company
           </div>
 
-          <h1 className="text-5xl font-heading font-semibold tracking-tight leading-tight mb-5 capitalize">
+          <h1
+            className="
+            text-3xl sm:text-4xl md:text-5xl 
+            font-heading font-semibold 
+            tracking-tight leading-tight 
+            mb-4 md:mb-5 capitalize
+          "
+          >
             Powering <span className="text-[#04b06e]">Businesses &</span>
             <br />
             Learners with innovative <br />
             <span className="text-[#1c63f6]">tech solutions.</span>
           </h1>
 
-          <p className="text-sm font-sans text-gray-700 leading-relaxed tracking-tight mb-10">
+          <p
+            className="
+            text-sm 
+            font-sans text-gray-700 
+            leading-relaxed tracking-tight 
+            mb-6 md:mb-10
+          "
+          >
             We build powerful tech solutions for businesses and institutions.
             From custom{" "}
             <span className="text-[#1c63f6]">CRM & ERP systems</span>{" "}
@@ -51,24 +90,46 @@ const Hero = ({ List }) => {
             intelligent AI products — everything under one roof.
           </p>
 
-          <div className="flex gap-5 flex-wrap">
+          {/* BUTTONS */}
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-5">
             <button
-              className="bg-[#1c63f6] text-white px-6 py-2.5 rounded-full 
-                font-heading font-semibold hover:bg-[#1a54d9] transition"
+              className="
+              bg-[#1c63f6] text-white 
+              px-5 md:px-6 py-2.5 
+              rounded-full 
+              text-sm
+              font-heading font-semibold 
+              hover:bg-[#1a54d9] transition
+              w-full sm:w-auto
+            "
             >
               Schedule Demo <FaArrowRight className="inline-block ml-2" />
             </button>
 
             <button
-              className="border border-[#04b06e] text-[#04b06e] px-6 py-2.5 
-                rounded-full font-heading font-semibold hover:bg-[#04b06e] 
-                hover:text-white transition"
+              className="
+              border border-[#04b06e] text-[#04b06e] 
+              px-5 md:px-6 py-2.5 
+              rounded-full 
+              text-sm
+              font-heading font-semibold 
+              hover:bg-[#04b06e] hover:text-white transition
+              w-full sm:w-auto
+            "
             >
               Schedule Demo <FaArrowRight className="inline-block ml-2" />
             </button>
           </div>
 
-          <div className="flex flex-wrap items-center gap-6 mt-10 text-xs text-gray-700">
+          {/* TRUST ROW */}
+          <div
+            className="
+            flex flex-col sm:flex-row 
+            gap-3 sm:gap-6 
+            mt-6 md:mt-10 
+            text-xs text-gray-700
+          "
+          >
             <p>
               <IoShieldCheckmarkOutline className="inline mr-1 text-[#04b06e]" />
               Trusted by 500+ institutions & companies
@@ -85,25 +146,36 @@ const Hero = ({ List }) => {
         </div>
 
         {/* RIGHT */}
-        <div className="w-full md:w-1/2 flex flex-col gap-1">
+        <div className="w-full md:w-1/2 flex flex-col gap-3 md:gap-1">
           {List.map((item, index) => (
             <div
               key={index}
-              className="flex items-center gap-4 rounded-2xl p-4 shadow-sm hover:shadow-md transition text-white"
+              className="
+              flex items-center gap-3 md:gap-4 
+              rounded-2xl p-3 md:p-4 
+              shadow-sm hover:shadow-md transition 
+              text-white
+            "
               style={{ backgroundColor: item.bg }}
             >
               <div
-                className="text-3xl bg-white p-4 rounded-2xl"
+                className="
+                text-2xl md:text-3xl 
+                bg-white p-3 md:p-4 
+                rounded-2xl
+              "
                 style={{ color: item.bg }}
               >
                 {item.logo}
               </div>
 
               <div>
-                <h3 className="text-lg font-heading font-semibold mb-1">
+                <h3 className="text-base md:text-lg font-heading font-semibold mb-1">
                   {item.heading}
                 </h3>
-                <p className="text-sm text-white/90">{item.text}</p>
+                <p className="text-xs md:text-sm text-white/90">
+                  {item.text}
+                </p>
               </div>
             </div>
           ))}
